@@ -12,3 +12,4 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 # http://localhost:9000/hello?name="Play!"
 GET		/hello						controllers.Hello.hello(name: String?="Robin")
 GET		/signin						controllers.Signin.signin()
+GET		/html5						controllers.Hello.html5()
