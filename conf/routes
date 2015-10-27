@@ -13,3 +13,9 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 GET		/hello						controllers.Hello.hello(name: String?="Robin")
 GET		/signin						controllers.Signin.signin()
 GET		/html5						controllers.Hello.html5()
+
+# warehouse
+GET		/products/					controllers.Products.list()
+GET		/products/new				controllers.Products.showBlank()
+GET		/products/:ean				controllers.Products.show(ean: Long)
+POST	/products/					controllers.Products.save()
