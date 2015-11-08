@@ -27,4 +27,37 @@ public class Product {
 	public String toString() {
 		return String.format("%s - %s", ean, name);
 	}
+
+	public static Set<Product> findAll(){
+		return new HashSet<Product>(products);
+	}
+	
+	public static Product findByEan(Long ean){
+		for (Product candidate : products) {
+			if(candidate.ean.equals(ean)) {
+				return candidate;
+			}
+		}
+		return null;
+	}
+	
+
+	public static Set<Product> findByName(String term) {
+		final Set<Product> results = new HashSet<Product>();
+		for (Product candidate : products) {
+			if(candidate.name.toLowerCase().contains(term.toLowerCase())){
+				results.add(candidate);
+			}
+		}
+		return results;
+	}	
+
+	public static boolean remove(Product product) {
+		return products.remove(product);
+	}
+	
+	public static void add(Product product) {
+		products.add(product);
+	}
 }
+
