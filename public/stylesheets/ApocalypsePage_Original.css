@@ -1,9 +1,9 @@
-﻿body {
+body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
   max-width: 800px;
 }
 
-.Header {
+header {
   background-color: #7695FE;
   border: thin #336699 solid;
   padding: 10px;
@@ -11,18 +11,18 @@
   text-align: center;
 }
 
-.Header h1 {
+header h1 {
   margin: 0px;
   color: white;
   font-size: xx-large;
 }
 
-.Header .Teaser {
+header .Teaser {
   margin: 0px;
   font-weight: bold;
 }
 
-.Header .Byline {
+header .Byline {
   font-style: italic;
   font-size: small;
   margin: 0px;
@@ -54,15 +54,15 @@
   margin-top: 0px;
 }
 
-.Footer {
+footer {
   text-align: center;
   font-size: x-small;	
 }
 
-.Footer .Disclaimer {
+footer .Disclaimer {
   font-style: italic;
 }
 
-.Footer p {
+footer p {
   margin: 3px;
 }
